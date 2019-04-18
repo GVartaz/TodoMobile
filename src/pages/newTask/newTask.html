@@ -1,0 +1,24 @@
+<ion-header>
+    <ion-navbar color="dark">
+      <ion-title>Nouvelle Tache</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+    <form>
+      <ion-list>
+          <ion-item>
+              <ion-label color="primary">Nom</ion-label>
+              <ion-input type="text" placeholder="Ma nouvelle tache" [(ngModel)]="task" name="task" value="task" required=""></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label color="primary">Liste</ion-label>
+            <ion-select [(ngModel)]="list" [ngModelOptions]="{standalone: true}">
+              <ion-option *ngFor="let list of listSet" [value]="list.name">{{list.name}}</ion-option>
+            </ion-select>
+          </ion-item>
+      </ion-list>
+      <p style="color: red">{{errorR}}</p>
+      <button ion-button full type="submit" (tap)="addTask()">Ajouter</button>
+    </form>
+  </ion-content>

@@ -1,0 +1,18 @@
+<ion-header>
+    <ion-navbar color="dark">
+      <ion-title>Add a new List</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+    <form>
+      <ion-list>
+          <ion-item>
+              <ion-label color="primary">List</ion-label>
+              <ion-input type="text" placeholder="My list" [(ngModel)]="list" name="list" value="list" required=""></ion-input>
+          </ion-item>
+      </ion-list>
+      <p style="color: red">{{errorR}}</p>
+      <button ion-button full type="submit" (tap)="addList()">Add</button>
+    </form>
+  </ion-content>

@@ -1,0 +1,41 @@
+{
+  "name": "Todo_Mobile",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "proxies": [
+    {
+      "path": "/connexion",
+      "proxyUrl": "https://mytodolist69.herokuapp.com/connexion"
+    },
+    {
+      "path": "/addUser",
+      "proxyUrl": "https://mytodolist69.herokuapp.com/addUser"
+    },
+    {
+      "path": "/getTaskSet",
+      "proxyUrl": "https://mytodolist69.herokuapp.com/getTaskSet"
+    },
+    {
+      "path": "/addList",
+      "proxyUrl": "https://mytodolist69.herokuapp.com/addList"
+    },
+    {
+      "path": "/addTask",
+      "proxyUrl": "https://mytodolist69.herokuapp.com/addTask"
+    },
+    {
+      "path": "/updateCB",
+      "proxyUrl": "https://mytodolist69.herokuapp.com/updateCB"
+    },
+    {
+      "path": "/deleteTask",
+      "proxyUrl": "https://mytodolist69.herokuapp.com/deleteTask"
+    },
+    {
+      "path": "/deleteList",
+      "proxyUrl": "https://mytodolist69.herokuapp.com/deleteList"
+    }
+  ]
+}

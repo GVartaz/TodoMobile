@@ -1,0 +1,34 @@
+  <ion-header>
+      <ion-navbar>
+        <img id="logo" src="../assets/imgs/logoEntete.png">
+        <ion-title>
+          MyTodoList
+        </ion-title>
+      </ion-navbar>
+    </ion-header>
+    
+    <ion-content>
+        <ion-list>
+          <ion-item *ngFor="let list of listSet">
+            <h1><ion-icon style="color: red" name="trash" (tap)="deleteList(list._id)" item-start></ion-icon>{{ list.name }}</h1>
+            <ion-list>
+              <div *ngFor="let task of taskSet">
+                <ion-item *ngIf="task.liste == list.name" [ngClass]="{taskDone : task.done}" class="task">
+                  <h2 *ngIf="task.done">
+                      <img src="../assets/imgs/checked.png" id="check" (tap)="updateCB(task._id)">
+                    <div id="text"><del>{{ task.text }}</del></div>
+                  </h2>
+                  <h2 *ngIf="!task.done">
+                      <img src="../assets/imgs/unchecked.png" id="check" (tap)="updateCB(task._id)">
+                      <div id="text">{{ task.text }}</div>
+                  </h2>
+                  <h4>{{ task.date }}</h4>
+                  <ion-icon style="color: rgb(15, 43, 167); margin-right: 25px;" name="create" (tap)="setStatusTask(task._id, !task.done)" item-end></ion-icon>
+                  <ion-icon style="color: red" name="trash" (tap)="deleteTask(task._id)" item-end></ion-icon>
+                </ion-item>
+              </div>
+            </ion-list>
+          </ion-item>
+        </ion-list>
+    </ion-content>
+    

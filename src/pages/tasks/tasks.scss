@@ -1,0 +1,41 @@
+page-home {
+
+    .toolbar-background-md{
+        background: #7a7ada;
+    }
+
+    .scroll-content{
+        background-color: #d6d6d6;
+    }
+
+
+    #logo{
+        margin-left: 50%;
+        display: inline;
+    }
+
+    p{
+        color: black;
+        padding-top: 15px;
+    }
+
+    #text{
+        display: inline;
+        margin-left: 15px;
+        font-size: 150%;
+    }
+
+    ion-title{
+        margin-left: 47%
+    }
+
+    .task{
+        background: #7a7ada;
+        margin-top: 0.3em; 
+        border-radius: 5px;
+    }
+
+    .taskDone{
+        background: lightgray;
+    }
+}

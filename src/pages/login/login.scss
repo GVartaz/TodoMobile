@@ -1,0 +1,29 @@
+page-login {
+
+    background-image: linear-gradient(rgb(138, 140, 206), rgb(122, 122, 218));
+
+    form{
+        padding-left: 25%;
+        padding-right: 25%;
+        padding-top: 1%;
+        padding-bottom: 5%;
+    }
+    
+    form .button {
+        background-color: black;
+    }
+    
+    .label-ios-primary, .item-input .label-ios-primary, .item-select .label-ios-primary, .item-datetime .label-ios-primary, .label-md-primary, .item-input .label-md-primary, .item-select .label-md-primary, .item-datetime .label-md-primary{
+        color: black;
+    }
+    
+    .swiper-pagination-bullet-active{
+        background: black;
+    }
+    
+    #logoLogin{
+        text-align: center;
+        height: 5em;
+        margin-bottom: 2%;
+    }
+}
