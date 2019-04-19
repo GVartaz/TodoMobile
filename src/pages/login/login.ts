@@ -48,7 +48,7 @@ export class loginPage {
           this.http.post('/connexion', requete)
           .map(res => res.json())
           .subscribe(res => {
-                if(res.data == false){
+                if(res == false){
                     this.errorL = "Identifiant(s) invalide(s)";
                 } else {
                   sessionStorage.setItem("loggedUser",this.username);
@@ -78,7 +78,7 @@ export class loginPage {
           this.http.post('/addUser', requete)
           .map(res => res.json())
           .subscribe(res => {
-                if(res.data == false){
+                if(res == false){
                     this.errorR = "Identifiant déjà utilisé";
                 } else {
                   sessionStorage.setItem("loggedUser",this.username1);
