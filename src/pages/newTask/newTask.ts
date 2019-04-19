@@ -35,7 +35,7 @@ export class newTaskPage {
     if(requete.select == undefined){
       this.errorR = "Veuillez associer la tache à une de vos listes";
     } else {
-      if(requete.text == ""){
+      if(requete.text == undefined){
         this.errorR = "Veuillez donner un nom à votre tache";
       } else {
         this.errorR = '';
