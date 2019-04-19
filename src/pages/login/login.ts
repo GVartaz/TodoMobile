@@ -41,10 +41,10 @@ export class loginPage {
         pwd : this.password
       };
 
-        if(requete.login == "" || requete.pwd == ""){
+        if(requete.login == null || requete.pwd == null){
             this.errorL = "Vous devez remplir les champs";
         }
-        if(requete.login != "" && requete.pwd != "" ){
+        if(requete.login != null && requete.pwd != null ){
           this.http.post('/connexion', requete)
           .map(res => res.json())
           .subscribe(res => {
@@ -71,10 +71,10 @@ export class loginPage {
           pwd : this.password2
         };
 
-        if(requete.login == "" || requete.pwd == ""){
+        if(requete.login == null || requete.pwd == null){
           this.errorR = "Vous devez remplir les champs";
         }
-        if(requete.login != "" && requete.pwd != "" ){
+        if(requete.login != null && requete.pwd != null ){
           this.http.post('/addUser', requete)
           .map(res => res.json())
           .subscribe(res => {
