@@ -23,7 +23,7 @@
                       <div id="text">{{ task.text }}</div>
                   </h2>
                   <h4>{{ task.date }}</h4>
-                  <ion-icon style="color: rgb(15, 43, 167); margin-right: 25px;" name="create" (tap)="setStatusTask(task._id, !task.done)" item-end></ion-icon>
+                  <!-- <ion-icon style="color: rgb(15, 43, 167); margin-right: 25px;" name="create" (tap)="updateTask(task._id)" item-end></ion-icon>-->
                   <ion-icon style="color: red" name="trash" (tap)="deleteTask(task._id)" item-end></ion-icon>
                 </ion-item>
               </div>
